@@ -1,22 +1,31 @@
+/*this design color got ideas from carbon design system from 
+http://carbondesignsystem.com/components/button/code*/
 
 * {
   box-sizing: border-box;
 }
 
-body{
-	font-family:sans-serif,fantasy,Georgia;
+/*learnt from https://css-tricks.com
+/snippets/css/using-font-face/*/
+@font-face{
+	font-family: "myFont";
+	src:url(BauerBodoni/BauerBodoniStd-Bold.otf),
+		url(BauerBodoni/BauerBodoniStd-BlackCond.otf),
+		url(BauerBodoni/BauerBodoniStd-BlackItalic.otf),
+		url(BauerBodoni/BauerBodoniStd-Black.otf),
+		url(BauerBodoni/BauerBodoniStd-BoldCond.otf),
+		url(BauerBodoni/BauerBodoniStd-BoldItalic.otf),
+		url(BauerBodoni/BauerBodoniStd-Italic.otf),
+		url(BauerBodoni/BauerBodoniStd-Roman.otf);
 }
 
- h1{
-	letter-spacing: 1em;
-	max-width: 50%;
-	min-width: 10%;
-	height:auto;
-	text-transform:uppercase;
-	text-align: center;
+body{
+	font-family:'myFont';
 }
+
 .grid{
 	display:flex;
+	padding: 1em;
 }
 
 .grid-item{
@@ -24,18 +33,87 @@ body{
 	margin:auto;
 }
 
+h1{
+	letter-spacing: 0.8em;
+}
+
+h2{
+	letter-spacing: 0.2em;
+}
+
+h3,h4{
+	letter-spacing: 0.1em;
+}
+
+h1,h2,h3,h4{
+	max-width: 50%;
+	height:auto;
+	text-transform:uppercase;
+	text-align: center;	
+}
+
+label{
+	font-kerning:normal;
+	font-weight: bolder;
+	font-style: italic;
+	text-transform: lowercase;
+}
+
+h2,h3,h4,label,p{
+	color:white;
+	background-color: #5a6872;
+	padding: 0.5em;
+}
+
+p{
+	font-weight:100;
+	text-indent: 2em;
+	letter-spacing:0.2em;
+	word-spacing: 0.2em;
+	stroke-linecap:2em;
+	line-height:2em;
+	max-width: 40%;
+
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.nav_link, h1{
+	color: #41d6c3;
+}
+
+.intext_link{
+	color:white;
+	background-color:#41d6c3; 
+
+	-webkit-transition:width 0.5s ease-in-out 0.5s;
+	 -webkit-transition:transform 2s;
+}
+
+.intext_link:hover, .intext_link:visited, .intext_link:active {
+	/*transform:rotate(30deg);*/
+
+}
+
+/*.rotate:hover{
+	-webkit-transform: rotate(30deg);
+}*/
+
 #top-nav{
 	/*background-color:red;*/
 	writing-mode: horizontal-tb;
 	width:100%;
-	height:20%;
+	height:10%;
 }
 
 #left-nav{
 	/*background-color:purple;*/
 	writing-mode: vertical-lr;
 	width:20%;
-	height:60%;
+	height:80%;
 	
 }	
 
@@ -43,13 +121,13 @@ body{
 	/*background-color:yellow;*/
 	writing-mode:vertical-rl;
 	width:20%;
-	height:60%;
+	height:80%;
 }
 
 #bottom-nav{
 	/*background-color:orange;*/
 	writing-mode: horizontal-tb;
 	width:100%;
-	height:20%;
+	height:10%;
 
 }
