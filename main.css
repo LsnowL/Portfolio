@@ -87,20 +87,42 @@ a{
 
 .intext_link{
 	color:white;
-	background-color:#41d6c3; 
-
-	-webkit-transition:width 0.5s ease-in-out 0.5s;
-	 -webkit-transition:transform 2s;
+	background-color:#41d6c3;  
 }
 
-.intext_link:hover, .intext_link:visited, .intext_link:active {
-	/*transform:rotate(30deg);*/
-
+/*learnt from https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1*/
+.nav_link:hover,.nav_link:visited,.nav_link:active{
+	animation-name: moveMatrix;
 }
 
-/*.rotate:hover{
-	-webkit-transform: rotate(30deg);
-}*/
+.intext_link:hover,.intext_link:visited,.intext_link:active{
+	animation-name: bgcolorChange;
+}
+
+.intext_link:hover,.nav_link:hover, .intext_link:visited,
+.nav_link:visited, .intext_link:active,.nav_link:active {
+	animation-duration: 2s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-in-out 5s;
+}
+
+@keyframes bgcolorChange{
+	from{
+		background-color:#41d6c3; 
+	}
+	to{
+		background-color:pink;
+	}
+}
+
+@keyframes moveMatrix{
+	from{
+		color:#41d6c3; 
+	}
+	to{
+		color:pink;
+	}
+}
 
 #top-nav{
 	/*background-color:red;*/
