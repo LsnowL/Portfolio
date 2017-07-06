@@ -1,4 +1,4 @@
-/*this design color got ideas from carbon design system from 
+/*this design got ideas from carbon design system from 
 http://carbondesignsystem.com/components/button/code*/
 
 * {
@@ -34,7 +34,7 @@ body{
 }
 
 h1{
-	letter-spacing: 0.8em;
+	letter-spacing: 0.5em;
 }
 
 h2{
@@ -46,20 +46,21 @@ h3,h4{
 }
 
 h1,h2,h3,h4{
-	max-width: 50%;
-	height:auto;
 	text-transform:uppercase;
 	text-align: center;	
 }
 
-label{
+h4,label{
+	color:black;
+	background-color: pink;
 	font-kerning:normal;
 	font-weight: bolder;
 	font-style: italic;
 	text-transform: lowercase;
+	text-decoration:line-through;
 }
 
-h2,h3,h4,label,p{
+h2,h3{
 	color:white;
 	background-color: #5a6872;
 	padding: 0.5em;
@@ -72,13 +73,82 @@ p{
 	word-spacing: 0.2em;
 	stroke-linecap:2em;
 	line-height:2em;
-	max-width: 40%;
+	/*max-width: 40%;*/
+	color:#787e82;
 
 }
 
 a{
 	text-decoration: none;
 	cursor: pointer;
+}
+
+#top-nav{
+	writing-mode: horizontal-tb;
+	width:100%;
+	height:10%;
+}
+
+#left-nav{
+	writing-mode: vertical-lr;
+	width:20%;
+	height:80%;
+	
+}	
+
+#right-nav{
+	writing-mode:vertical-rl;
+	width:20%;
+	height:80%;
+}
+
+#bottom-nav{
+	writing-mode: horizontal-tb;
+	width:100%;
+	height:10%;
+
+}
+
+.logo{
+	width: 6%;
+	margin:auto;
+}
+
+#logowithbox{
+	width:70%;
+	height:auto;
+	z-index: 10;
+}
+
+#lInbox{
+	fill:pink;
+}
+
+#sInbox{
+	fill:#41d6c3;
+}
+
+/*dash offset which learnt from 
+https://css-tricks.com/svg-line-animation-works/*/
+#homebox{
+	fill:none;
+	stroke:#41d6c3;
+	stroke-dasharray:100;
+	animation:dash 8s linear;
+	animation-iteration-count: infinite;
+	/*stroke properties which learnt from 
+	https://www.w3schools.com/graphics/svg_stroking.asp*/
+	stroke-width:8px;
+	stroke-linecap: round;
+}
+@keyframes dash{
+	to{
+		stroke-dashoffset:1000;
+	}
+}
+
+#welcome{
+	z-index: -1;
 }
 
 .nav_link, h1{
@@ -92,7 +162,8 @@ a{
 
 /*learnt from https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1*/
 .nav_link:hover,.nav_link:visited,.nav_link:active{
-	animation-name: moveMatrix;
+	animation-name: fadeinRight;
+	animation-name: bgcolorChange;
 }
 
 .intext_link:hover,.intext_link:visited,.intext_link:active{
@@ -100,12 +171,38 @@ a{
 }
 
 .intext_link:hover,.nav_link:hover, .intext_link:visited,
-.nav_link:visited, .intext_link:active,.nav_link:active {
+.nav_link:visited, .intext_link:active,.nav_link:active{
 	animation-duration: 2s;
 	animation-iteration-count:infinite;
-	animation-timing-function: ease-in-out 5s;
+	animation-timing-function: ease-in-out 3s;
+	animation-fill-mode: both;
 }
 
+
+.fadeinLeft{
+	animation-name: fadeinLeft;
+}
+
+.fadeinRight{
+	animation-name: fadeinRight;
+}
+
+.fadeinTop{
+	animation-name: fadeinTop;
+}
+
+.fadeinBottom{
+	animation-name: fadeinBottom;
+}
+
+.fadeinLeft, .fadeinRight,.fadeinTop,.fadeinBottom{
+	animation-duration: 4s;
+	animation-iteration-count:1;
+	animation-timing-function: ease-in-out 4s;
+	animation-fill-mode: both;
+}
+
+/*learnt from https://css-tricks.com/add-page-transitions-css-smoothstate-js/*/
 @keyframes bgcolorChange{
 	from{
 		background-color:#41d6c3; 
@@ -115,41 +212,139 @@ a{
 	}
 }
 
-@keyframes moveMatrix{
-	from{
-		color:#41d6c3; 
+@keyframes colorfulBackground{
+	0%{
+		color:#41d6c3;
 	}
-	to{
+	25%{
 		color:pink;
 	}
+	75%{
+		color:#5a6872;
+	}
+	100%{
+		color:white;
+	}
 }
 
-#top-nav{
-	/*background-color:red;*/
-	writing-mode: horizontal-tb;
-	width:100%;
-	height:10%;
+/*rotate svg which learnt fromhttps://css-tricks.
+com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
+@keyframes rotate20deg{
+	0%{
+		transform: rotate(-20deg);
+	}
+	25%{
+		transform:rotate(0deg);
+	}
+	75%{
+		transform:rotate(20deg);
+	}
+	100%{
+		transform:rotate(-20deg);
+	}
 }
 
-#left-nav{
-	/*background-color:purple;*/
-	writing-mode: vertical-lr;
-	width:20%;
-	height:80%;
-	
-}	
+/*https://www.tutorialspoint.com/css/css_animation_fade_in_left.htm*/
+@keyframes fadeinTop{
 
-#right-nav{
-	/*background-color:yellow;*/
-	writing-mode:vertical-rl;
-	width:20%;
-	height:80%;
+	0%{
+		opacity: 0;
+		transform:translateY(-20em);
+	}
+
+	100%{
+		opacity: 1;
+		transform:translateY(0);
+	}
 }
 
-#bottom-nav{
-	/*background-color:orange;*/
-	writing-mode: horizontal-tb;
-	width:100%;
-	height:10%;
+@keyframes fadeinBottom{
 
+	0%{
+		opacity: 0;
+		transform:translateY(20em);
+	}
+
+	100%{
+		opacity: 1;
+		transform:translateY(0);
+	}
+}
+
+@keyframes fadeinRight{
+
+	0%{
+		opacity: 0;
+		transform:translateX(20em);
+	}
+
+	100%{
+		opacity: 1;
+		transform:translateX(0);
+	}
+}
+
+
+@keyframes fadeinLeft{
+
+	0%{
+		opacity: 0;
+		transform:translateX(-20em);
+	}
+
+	100%{
+		opacity: 1;
+		transform:translateX(0);
+	}
+}
+
+.color,.font,.button{
+	padding: 2em;
+	border:1px dashed black;
+	align-items: center;
+	text-align: center
+}
+
+.color .grid-item{
+	width:100px;
+	border:1px solid black;
+}
+
+#color1{
+	background-color: black;
+	/*background-color:#5a6872;	*/
+}
+
+#color2{
+	background-color:#787e82;	
+}
+
+#color3{
+	background-color:white;
+	color:#5a6872;
+}
+#color4{
+	background-color:#41d6c3;
+}
+
+#color5{
+	background-color:pink;
+}
+
+.imageButton{
+	width:70px;
+	fill:#41d6c3;
+}
+.imageButton:hover,.logo:hover{
+	animation-name:rotate20deg;
+	animation-duration: 2s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-in-out 5s;
+	animation-fill-mode: both;
+}
+
+/*aout page ___________________*/
+.personal{
+	width:50%;
+	margin:auto;
 }
