@@ -26,6 +26,7 @@ body{
 
 .grid{
 	display:flex;
+	width:100%;
 }
 
 .wrap{
@@ -36,6 +37,9 @@ body{
 .grid-item{	
 	margin:auto;
 	padding: 1em;	
+}
+hr{
+	border: 1.5px dashed grey;
 }
 
 h1,.figcationLogo{
@@ -83,7 +87,7 @@ p{
 	word-spacing: 0.2em;
 	stroke-linecap:2em;
 	line-height:2em;
-	max-width: 60%;
+	max-width: 50%;
 	color:#787e82;
 	margin:auto;
 }
@@ -427,20 +431,22 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	left:0;
 	bottom:-5%;
 }
+/*.iImage{
+	max-width:100px;
+}*/
 
 #personaimage{
 	width:40%;
 	height:auto;
-	max-height: 400px;
-
-	
+	max-height: 400px;	
 }
 .personaimage{
 	text-align: center;
 	border:1em inset pink;
 }
 /*aout page ___________________*/
-.personal{
-	width:50%;
-	margin:auto;
+@media(max-width: 840px){
+	.persnoalInformation{
+		flex-wrap: wrap;
+	}
 }
