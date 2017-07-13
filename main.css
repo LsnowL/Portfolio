@@ -61,12 +61,14 @@ h1,h2,h3,h4,.figcationLogo{
 }
 
 h4,label{
-	color:black;
+	letter-spacing: 0.15em;
+	color:white;
 	background-color: pink;
 	font-kerning:normal;
 	font-weight: bolder;
 	font-style: italic;
 	text-align: center;
+	padding: 0.3em;
 	/*text-transform: lowercase;*/
 	/*text-decoration:line-through;*/
 }
@@ -95,6 +97,10 @@ p{
 a{
 	text-decoration: none;
 	cursor: pointer;
+}
+
+a:hover,a:active,a:visited{
+	opacity: 1;
 }
 
 img{
@@ -135,6 +141,14 @@ a.logo{
 	width:150px;
 	margin:auto;
 	position:relative;
+	right:10%;
+}
+a.logo:hover{
+	animation-name:rotate20deg;
+	animation-duration: 2s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-in-out 5s;
+	animation-fill-mode: both;
 }
 
 .figcationLogo{
@@ -236,27 +250,12 @@ https://css-tricks.com/svg-line-animation-works/*/
 }
 
 /*learnt from https://css-tricks.com/add-page-transitions-css-smoothstate-js/*/
-@keyframes bgcolorChange{
+@keyframes bdcolorChange{
 	from{
-		background-color:#41d6c3; 
+		border-color:#41d6c3; 
 	}
 	to{
-		background-color:pink;
-	}
-}
-
-@keyframes colorfulBackground{
-	0%{
-		color:#41d6c3;
-	}
-	25%{
-		color:pink;
-	}
-	75%{
-		color:#5a6872;
-	}
-	100%{
-		color:white;
+		border-color:pink;
 	}
 }
 
@@ -367,17 +366,16 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 .imageButton{
 	width:2em;
 	fill:#41d6c3;
-	opacity: 0.4;
+	/*opacity: 0.5;*/
 	transition: 0.3s;
-	/*display:inline-block;*/
-}
-.imageButton:hover,.logo:hover{
-	opacity: 1;
 	animation-name:rotate20deg;
 	animation-duration: 2s;
 	animation-iteration-count:infinite;
 	animation-timing-function: ease-in-out 5s;
 	animation-fill-mode: both;
+}
+.imageButton:hover{
+	transform: scale(2);
 }
 
 .downArrow{
@@ -392,8 +390,6 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 
 .firstImage{
 	width:80%;
-
-	/*border:1px inset grey;*/
 	position: relative;
 	left:25%;
 	z-index: 9;
@@ -411,7 +407,6 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 
 .thirdImage{
 	width:80%;
-	/*border:1px inset grey;*/
 	position:relative;
 	left:5%;
 	z-index: 9;
@@ -431,18 +426,27 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	left:0;
 	bottom:-5%;
 }
-/*.iImage{
-	max-width:100px;
-}*/
 
 #personaimage{
 	width:40%;
 	height:auto;
 	max-height: 400px;	
 }
+
+#personaimage:hover{
+	transform: scale(1.2);
+}
+
 .personaimage{
 	text-align: center;
-	border:1em inset pink;
+}
+
+.personaimage,.contact{
+	border:1em groove pink;
+	animation:bdcolorChange;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out 2s;
+	animation-duration: 5s;
 }
 /*aout page ___________________*/
 @media(max-width: 840px){
@@ -450,3 +454,37 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 		flex-wrap: wrap;
 	}
 }
+/*contact page----------------------*/
+.contact{
+	margin-top: 10%;
+	width:60%;
+	position:relative;
+
+}
+
+@media(max-width: 900px){
+	.contact{
+		margin-top: 25%;
+		width:80%;	
+	}
+}
+
+#contactCaption{
+	width:40%;
+	position:absolute;
+	left:53%;
+	bottom:40%;
+}
+
+.indent{
+	position: absolute;
+	left:10%;
+}
+
+
+
+
+
+
+
+
