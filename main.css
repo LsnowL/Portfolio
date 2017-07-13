@@ -135,13 +135,14 @@ a.logo{
 
 .figcationLogo{
 	position: absolute;
-	left:80%;
-	top:50%;
+	left:60%;
+	top:66%;
 
 }
 
 #logowithbox{
 	width:70%;
+	min-width: 100px;
 	height:auto;
 	z-index: 10;
 }
@@ -360,9 +361,9 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 }
 
 .imageButton{
-	width:50px;
+	width:2em;
 	fill:#41d6c3;
-	opacity: 0.2;
+	opacity: 0.4;
 	transition: 0.3s;
 	/*display:inline-block;*/
 }
@@ -428,19 +429,15 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 }
 
 #personaimage{
-	/*transform: scaleX(0.6);*/
-	/*transform: scaleY(0.3);*/
 	width:40%;
 	height:auto;
 	max-height: 400px;
-	overflow: hidden; 
 
 	
 }
 .personaimage{
-	/*margin:0 auto;*/
 	text-align: center;
-	border:2px inset pink;
+	border:1em inset pink;
 }
 /*aout page ___________________*/
 .personal{
