@@ -47,7 +47,7 @@ h1,.figcationLogo{
 	letter-spacing: 0.5em;
 }
 
-h2{	font-size:1em;
+h2{	font-size:1.3em;
 	letter-spacing: 0.2em;
 }
 
@@ -82,15 +82,16 @@ h2,h3{
 p{	
 
 	text-align: center;
-	font-size: 0.7em;
+	font-size: 0.8em;
 	font-weight:100;
 	text-indent: 2em;
 	letter-spacing:0.2em;
 	word-spacing: 0.2em;
 	stroke-linecap:2em;
 	line-height:2em;
-	max-width: 50%;
+	/*max-width: 50%;*/
 	color:#787e82;
+	min-width: 150px;
 	margin:auto;
 }
 
@@ -203,7 +204,8 @@ https://css-tricks.com/svg-line-animation-works/*/
 
 .intext_link{
 	color:white;
-	background-color:#41d6c3;  
+	background-color:#41d6c3; 
+	padding: 0.2em; 
 }
 
 /*learnt from https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1*/
@@ -214,11 +216,10 @@ https://css-tricks.com/svg-line-animation-works/*/
 }
 
 .intext_link:hover,.intext_link:visited,.intext_link:active{
-	animation-name: bgcolorChange;
+	background-color: rgba(65, 214, 195,0.5);
 }
 
-.intext_link:hover,.nav_link:hover, .intext_link:visited,
-.nav_link:visited, .intext_link:active,.nav_link:active{
+.nav_link:hover,.nav_link:visited,.nav_link:active{
 	animation-duration: 2s;
 	animation-iteration-count:infinite;
 	animation-timing-function: ease-in-out 2s;
@@ -426,7 +427,37 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	left:0;
 	bottom:-5%;
 }
+/*project1 page --------------*/
+.content{
+	width:50%;
+	text-align: center;
+}
 
+@media(max-width: 900px){
+	.content{
+		flex-wrap: wrap;
+	}
+}
+
+.projectContent img{
+	max-width: 400px;
+}
+@media(max-width: 895px){
+	.projectContent img{
+		max-width: 250px;
+	}
+}
+.projectContent{
+	margin:0 auto;
+	height:auto;
+	align-items:center;
+	border: 5px inset pink;
+}
+..projectContent p{
+	max-width: 40%;
+	/*min-width:30%;*/
+}
+/*works2 page --------------------*/
 #personaimage{
 	width:40%;
 	height:auto;
@@ -454,6 +485,10 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 		flex-wrap: wrap;
 	}
 }
+.persnoalInformation p{
+	max-width: 50%;
+}
+
 /*contact page----------------------*/
 .contact{
 	margin-top: 10%;
