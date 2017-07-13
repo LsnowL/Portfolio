@@ -463,6 +463,10 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	max-width: 40%;
 	/*min-width:30%;*/
 }
+
+.projectContent img:hover{
+	transform: scale(3);
+}
 /*works2 page --------------------*/
 #personaimage{
 	width:40%;
@@ -488,11 +492,20 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 }
 
 .project2{
-	width:55%;
+	width:70%;
 	margin:auto;
 	align-items: center;
 	/*border:1px solid black;*/
 }
+
+.project2 img{
+	width:350px;
+}
+
+.project2 img:hover{
+	transform: scale(2);
+}
+
 /*aout page ___________________*/
 .persnoalInformation{
 	width:70%;
