@@ -387,6 +387,8 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 
 #broimage{
 	background-color: rgba(255, 192, 203,0.8);
+	width:60%; 
+	margin:auto;
 }
 
 .firstImage{
@@ -428,32 +430,36 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	bottom:-5%;
 }
 /*project1 page --------------*/
-.content{
-	width:50%;
-	text-align: center;
-}
+/*.content{
+	width:60%;
+	margin:auto;
+	align-items: center;
+	
+	border-top: 5px inset pink;
+}*/
 
-@media(max-width: 900px){
+/*@media(max-width: 900px){
 	.content{
 		flex-wrap: wrap;
 	}
-}
+}*/
 
-.projectContent img{
+/*.projectContent img{
 	max-width: 400px;
 }
 @media(max-width: 895px){
 	.projectContent img{
 		max-width: 250px;
 	}
-}
+}*/
+
 .projectContent{
-	margin:0 auto;
-	height:auto;
-	align-items:center;
-	border: 5px inset pink;
+	width:55%;
+	margin:auto;
+	/*align-items:center;*/
+	border-left: 5px inset pink;
 }
-..projectContent p{
+.projectContent p{
 	max-width: 40%;
 	/*min-width:30%;*/
 }
@@ -470,6 +476,7 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 
 .personaimage{
 	text-align: center;
+	width:55%;
 }
 
 .personaimage,.contact{
@@ -479,14 +486,26 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	animation-timing-function: ease-in-out 2s;
 	animation-duration: 5s;
 }
+
+.project2{
+	width:55%;
+	margin:auto;
+	align-items: center;
+	/*border:1px solid black;*/
+}
 /*aout page ___________________*/
+.persnoalInformation{
+	width:70%;
+	margin:auto;
+}
+
 @media(max-width: 840px){
 	.persnoalInformation{
 		flex-wrap: wrap;
 	}
 }
 .persnoalInformation p{
-	max-width: 50%;
+	min-width: 50%;
 }
 
 /*contact page----------------------*/
