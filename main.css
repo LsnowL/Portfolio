@@ -36,13 +36,15 @@ body{
 
 .grid-item{	
 	margin:auto;
-	padding: 1em;	
 }
 hr{
 	border: 1.5px dashed grey;
 }
 
-h1,.figcationLogo{
+h1,#figcationLogoContact,
+#figcationLogoAbout,#figcationLogoCitation,
+#figcationLogoOthers,#figcationLogoProject1,#figcationLogoProject2,
+#figcationLogoStyle,#figcationLogoWorks,#figcationLogoWorks2{
 	font-size:1.5em;
 	letter-spacing: 0.5em;
 }
@@ -55,14 +57,17 @@ h3,h4{
 	letter-spacing: 0.1em;
 }
 
-h1,h2,h3,h4,.figcationLogo{
+h1,h2,h3,h4,#figcationLogoContact,
+#figcationLogoAbout,#figcationLogoCitation,
+#figcationLogoOthers,#figcationLogoProject1,#figcationLogoProject2,
+#figcationLogoStyle,#figcationLogoWorks,#figcationLogoWorks2{
 	text-transform:uppercase;
 	text-align: center;	
 }
 
-h4,label{
+label{
 	letter-spacing: 0.15em;
-	color:white;
+	color:#58595b;
 	background-color: pink;
 	font-kerning:normal;
 	font-weight: bolder;
@@ -79,6 +84,12 @@ h2,h3{
 	padding: 0.5em;
 }
 
+h4{
+	letter-spacing: 0.15em;
+	color:#58595b;
+	text-decoration:line-through;
+}
+
 p{	
 
 	text-align: center;
@@ -89,10 +100,46 @@ p{
 	word-spacing: 0.2em;
 	stroke-linecap:2em;
 	line-height:2em;
-	/*max-width: 50%;*/
-	color:#787e82;
+	color:#58595b;
 	min-width: 150px;
 	margin:auto;
+}
+
+ul.grid{
+	/*display: inline-block;*/
+	list-style-type: none;
+	height:10%;
+	/*learnt gradient color from 
+	https://www.w3schools.com/css/css3_gradients.asp*/
+	background: -webkit-linear-gradient(top, rgba(88,89,91,0), 
+		rgba(88,89,91,0.2));
+	border:15px solid white;
+	border-radius: 1em;
+	height:10%;
+}
+
+li{	
+	text-align: center;
+	line-height:2em;
+}
+li a{
+	font-size: 0.8em;
+	color:#58595b;
+	text-transform: uppercase;
+}
+
+li a:hover{
+	letter-spacing:0.9em;
+}
+
+#homepageContainer{
+	position: relative;
+}
+
+#footage{
+	width:100%;
+	position:absolute;
+	bottom: 0;
 }
 
 a{
@@ -106,10 +153,6 @@ a:hover,a:active,a:visited{
 
 img{
 	max-width: 60%;
-}
-
-ul{
-	list-style-type: none;
 }
 
 #top-nav{
@@ -140,7 +183,7 @@ ul{
 
 a.logo{
 	width:150px;
-	margin:auto;
+	margin-left:20%;
 	position:relative;
 	right:10%;
 }
@@ -151,17 +194,52 @@ a.logo:hover{
 	animation-timing-function: ease-in-out 5s;
 	animation-fill-mode: both;
 }
-
-.figcationLogo{
+/*set location for page title ---------------*/
+#figcationLogoAbout{
+	padding-bottom: 2em;
 	position: absolute;
-	left:60%;
-	top:66%;
+	left:43%;
+	top:5%;
+}
+
+#figcationLogoCitation{
+	padding-bottom: 2em;
+	position: absolute;
+	left:43%;
+	top:40%;
+}
+#figcationLogoContact{
+	position: absolute;
+	left:43%;
+	top:17%;
+}
+
+#figcationLogoProject1{
 
 }
 
+#figcationLogoProject2{
+
+}
+
+#figcationLogoStyle{
+	position: absolute;
+	left:45%;
+	top:10%;
+}
+#figcationLogoWorks{
+	position: absolute;
+	left:43%;
+	top:25%;
+}
+#figcationLogoWorks2{
+	position: absolute;
+	left:45%;
+	top:13%;
+}
+/*-----------------------------------*/
 #logowithbox{
-	width:70%;
-	min-width: 100px;
+	min-width: 150px;
 	height:auto;
 	z-index: 10;
 }
@@ -194,10 +272,16 @@ https://css-tricks.com/svg-line-animation-works/*/
 }
 
 #welcome{
-	z-index: -1;
+	width:60%;
+	padding-left: 2em;
+	margin-right: 0;
+	margin-left: 4%;
 }
 
-.nav_link, h1,.figcationLogo{
+.nav_link, h1,#figcationLogoContact,
+#figcationLogoAbout,#figcationLogoCitation,
+#figcationLogoOthers,#figcationLogoProject1,#figcationLogoProject2,
+#figcationLogoStyle,#figcationLogoWorks,#figcationLogoWorks2{
 	/*display: block;*/
 	color: #41d6c3;
 }
@@ -210,7 +294,6 @@ https://css-tricks.com/svg-line-animation-works/*/
 
 /*learnt from https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1*/
 .nav_link:hover,.nav_link:visited,.nav_link:active{
-	animation-name: fadeinRight;
 	/*animation-name: bgcolorChange;*/
 	letter-spacing: 1.8em;
 }
@@ -338,6 +421,10 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	text-align: center
 }
 
+.font{
+	margin-top: 3em;
+}
+
 .color .grid-item{
 	width:100px;
 	border:1px solid black;
@@ -349,7 +436,7 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 }
 
 #color2{
-	background-color:#787e82;	
+	background-color:#58595b;	
 }
 
 #color3{
@@ -386,11 +473,13 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 }
 
 #broimage{
-	background-color: rgba(255, 192, 203,0.8);
 	width:60%; 
 	margin:auto;
 }
-
+div#broimage{
+	margin-top:4em;
+	background-color: rgba(255, 192, 203,0.8);
+}
 .firstImage{
 	width:80%;
 	position: relative;
@@ -429,29 +518,6 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	left:0;
 	bottom:-5%;
 }
-/*project1 page --------------*/
-/*.content{
-	width:60%;
-	margin:auto;
-	align-items: center;
-	
-	border-top: 5px inset pink;
-}*/
-
-/*@media(max-width: 900px){
-	.content{
-		flex-wrap: wrap;
-	}
-}*/
-
-/*.projectContent img{
-	max-width: 400px;
-}
-@media(max-width: 895px){
-	.projectContent img{
-		max-width: 250px;
-	}
-}*/
 
 .projectContent{
 	width:55%;
@@ -467,6 +533,7 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 .projectContent img:hover{
 	transform: scale(3);
 }
+
 /*works2 page --------------------*/
 #personaimage{
 	width:40%;
@@ -484,7 +551,7 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 }
 
 .personaimage,.contact{
-	border:1em groove pink;
+	border:0.7em groove pink;
 	animation:bdcolorChange;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out 2s;
@@ -507,18 +574,21 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 }
 
 /*aout page ___________________*/
-.persnoalInformation{
+.persnoalInformation,.persnoalInformation2{
 	width:70%;
 	margin:auto;
 }
 
 @media(max-width: 840px){
-	.persnoalInformation{
+	.persnoalInformation,.persnoalInformation2{
 		flex-wrap: wrap;
 	}
 }
 .persnoalInformation p{
-	min-width: 50%;
+	max-width: 90%;
+}
+.persnoalInformation2 p{
+	max-width: 78%;
 }
 
 /*contact page----------------------*/
@@ -540,7 +610,7 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	width:40%;
 	position:absolute;
 	left:53%;
-	bottom:40%;
+	bottom:50%;
 }
 
 .indent{
@@ -548,8 +618,22 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	left:10%;
 }
 
+/*about page--------------------------*/
+#iImage{
+	padding-top:3em; 
+}
 
+#iImage2{
+	height:400px;
+	padding-top:1.5em;
+	padding-left: 4em; 
+}
 
+/*style page------------------------------*/
+#styleContainer{
+	width:70%;
+	margin:auto;
+}
 
 
 
