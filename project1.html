@@ -5,78 +5,76 @@
 		<meta charset="utf-8">
 		<meta name=viewport content="width=device-width, initial-scale=1">
 		<link href="main.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		 <!-- Toggle class learnt from https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_toggleclass -->
+		<script>
+			$(document).ready(function(){
+			    $(".toggleImg").click(function(){
+			        $(this).toggleClass("toggle");
+			    });
+			});
+		</script>
 	</head>
 
 	<body>
 		<!-- project page's content start -->
-		<div id="project1Container" class="fadeinBottom">
+		<div id="project1Container">
 			<!-- navigation bar start-->
-			<div class="grid" >
+			<div class="grid nav" >
 				<a class="logo" href="index.html#homepageContainer">
 					<img class="grid-item" src="img/logo.png" alt="logo">
 				</a>
-				<figcaption id="figcationLogoProject1">Magazine</figcaption>
-				
-				<!-- button link to back page -->
-				<a href="works.html" class="grid-item"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				 class="imageButton" viewBox="0 0 339.177 339.177";"
-				 xml:space="preserve">
-				<path d="M247.244,169.59l83.938-83.938c5.332-5.327,7.994-11.798,7.994-19.414c0-7.614-2.669-14.084-7.994-19.414L292.355,7.993
-					C287.026,2.665,280.556,0,272.944,0c-7.617,0-14.085,2.665-19.417,7.993L169.59,91.931L85.651,7.993
-					C80.325,2.665,73.854,0,66.237,0c-7.611,0-14.083,2.665-19.414,7.993L7.994,46.824C2.667,52.15,0,58.624,0,66.238
-					c0,7.616,2.664,14.084,7.994,19.414l83.937,83.938L7.994,253.528C2.667,258.859,0,265.327,0,272.945
-					c0,7.61,2.664,14.082,7.994,19.41l38.83,38.828c5.33,5.332,11.803,7.994,19.414,7.994c7.616,0,14.084-2.669,19.414-7.994
-					l83.939-83.938l83.944,83.938c5.328,5.332,11.793,7.994,19.417,7.994c7.611,0,14.082-2.669,19.411-7.994l38.82-38.828
-					c5.332-5.324,7.994-11.8,7.994-19.41c0-7.618-2.662-14.086-7.994-19.417L247.244,169.59z"/>
-					</svg>
-				</a>
-				<!-- back link button end -->
+				<figcaption class="figcationLogo">Magazine</figcaption>
 			</div>
 			<!-- navigation bar end-->
-			<br><br><br>
+							
+			<!-- button link to back page -->
+			<a href="works.html" class="grid-item"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 class="imageButton" viewBox="0 0 339.177 339.177";"
+			 xml:space="preserve">
+			<path d="M247.244,169.59l83.938-83.938c5.332-5.327,7.994-11.798,7.994-19.414c0-7.614-2.669-14.084-7.994-19.414L292.355,7.993
+				C287.026,2.665,280.556,0,272.944,0c-7.617,0-14.085,2.665-19.417,7.993L169.59,91.931L85.651,7.993
+				C80.325,2.665,73.854,0,66.237,0c-7.611,0-14.083,2.665-19.414,7.993L7.994,46.824C2.667,52.15,0,58.624,0,66.238
+				c0,7.616,2.664,14.084,7.994,19.414l83.937,83.938L7.994,253.528C2.667,258.859,0,265.327,0,272.945
+				c0,7.61,2.664,14.082,7.994,19.41l38.83,38.828c5.33,5.332,11.803,7.994,19.414,7.994c7.616,0,14.084-2.669,19.414-7.994
+				l83.939-83.938l83.944,83.938c5.328,5.332,11.793,7.994,19.417,7.994c7.611,0,14.082-2.669,19.411-7.994l38.82-38.828
+				c5.332-5.324,7.994-11.8,7.994-19.41c0-7.618-2.662-14.086-7.994-19.417L247.244,169.59z"/>
+				</svg>
+			</a>
+			<!-- back link button end -->
 
 			<!-- content start-->
+			<!-- project 1st half start -->
+			<div class="grid projectContent wrap">
+				<!-- para start -->			
+				<p class="grid-item">
+					This project for IAT 233 was to explore relationships between type, space and image. It focuses on<a class="intext_link" alt="underlying structure" href="http://nicklloyd.blogspot.ca/2013/01/1255-alexey-brodovitch.html">the Brodovitch method</a>. For this project, I considered more underlying structure that can drive invisible structure under the work in order to achieve unity.  
+				</p>									
+				<!-- para end -->
 
-			<div class=" grid content">
-				<!-- project 1st half start -->
-				<div class="grid projectContent">
-					<div class="grid-item">
-						<!-- image start -->
-						<img class="grid-item" alt="project1.1" src="img/1.jpg">
-						<img class="grid-item" alt="project1.2" src="img/2.jpg">
-						<img class="grid-item" alt="project1.3" src="img/3.jpg">
-						<!-- image end -->
-					</div>
-
-					<!-- para start -->
-					<div class="grid-item project-para">
-						<p> 
-							This project for IAT 233 is to explore relationships between type, space and image. It used <label>the Brodovitch method</label> which need to do a lot pre-work for images. For example, thought about if it is a good image to start first. Then I need to find contrasts in images that I can create interest. To crop images is the final step.
-						</p>
-										
-					</div>
-					<!-- para end -->
-				</div>			
-				<!--  project 1st half end -->
-
-				<!-- project 2nd half start -->
-				<div class="grid projectContent">
-					<!-- para start -->
-					<div class="project-para">
-						<p class="grid-item"> 
-							 For this project, I considered more <a class="intext_link" alt="underlying structure" href="">underlying structure</a> that can drive invisible structure under the work in order to achieve unity.  
-						</p>							
-					</div>
-					<!-- para end -->
-
-					<!-- image start-->
-					<div class="project-content">
-						<img class="grid-item project1-image" alt="project1.1" src="img/structure.jpg">	
-					</div>
-					<!-- image end -->
-				</div>			
-				<!--  project 2nd half end -->
+				<!-- image start-->		
+				<img class="grid-item toggleImg" id="project1-image" alt="project1.1" src="img/structure.jpg">	
+				<!-- image end -->
 			</div>
+			<hr>			
+			<!--  project 1st half end -->
+
+			<!-- project 2nd half start -->
+			<div class="projectContent wrap">			
+				<!-- image start -->
+				<img class="toggleImg grid-item" alt="project1.1" src="img/1.jpg">
+				<img class="toggleImg grid-item" alt="project1.2" src="img/2.jpg">
+				<img class="toggleImg grid-item" alt="project1.3" src="img/3.jpg">
+				<!-- image end -->
+
+				<!-- para start -->
+				<p class="grid-item"> 
+					 It needs to do a lot pre-work for images. For example, thought about if it is a good image to start first. Then I need to find contrasts in images that I can create interest. To crop images is the final step.
+				</p>								
+				<!-- para end -->
+			</div>
+			<!--  project 2nd half end -->
 		</div>
 		<!-- project page's content end-->
 	</body>
