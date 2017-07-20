@@ -20,13 +20,12 @@ http://carbondesignsystem.com/components/button/code*/
 }
 
 body{
-	font-family:'myFont';
+	font-family:"myFont";
 	font-size:100%;
 }
 
 .grid{
 	display:flex;
-	width:100%;
 }
 
 .wrap{
@@ -37,14 +36,14 @@ body{
 .grid-item{	
 	margin:auto;
 }
+
 hr{
 	border: 1.5px dashed grey;
+	width:70%;
+	align-self: center;
 }
 
-h1,#figcationLogoContact,
-#figcationLogoAbout,#figcationLogoCitation,
-#figcationLogoOthers,#figcationLogoProject1,#figcationLogoProject2,
-#figcationLogoStyle,#figcationLogoWorks,#figcationLogoWorks2{
+h1,.figcationLogo{
 	font-size:1.5em;
 	letter-spacing: 0.5em;
 }
@@ -57,10 +56,7 @@ h3,h4{
 	letter-spacing: 0.1em;
 }
 
-h1,h2,h3,h4,#figcationLogoContact,
-#figcationLogoAbout,#figcationLogoCitation,
-#figcationLogoOthers,#figcationLogoProject1,#figcationLogoProject2,
-#figcationLogoStyle,#figcationLogoWorks,#figcationLogoWorks2{
+h1,h2,h3,h4,.figcationLogo{
 	text-transform:uppercase;
 	text-align: center;	
 }
@@ -68,14 +64,12 @@ h1,h2,h3,h4,#figcationLogoContact,
 label{
 	letter-spacing: 0.15em;
 	color:#58595b;
-	background-color: pink;
 	font-kerning:normal;
 	font-weight: bolder;
 	font-style: italic;
 	text-align: center;
 	padding: 0.3em;
-	/*text-transform: lowercase;*/
-	/*text-decoration:line-through;*/
+	text-decoration:line-through;
 }
 
 h2,h3{
@@ -87,7 +81,6 @@ h2,h3{
 h4{
 	letter-spacing: 0.15em;
 	color:#58595b;
-	text-decoration:line-through;
 }
 
 p{	
@@ -101,31 +94,24 @@ p{
 	stroke-linecap:2em;
 	line-height:2em;
 	color:#58595b;
+	max-width: 500px;
 	min-width: 150px;
 	margin:auto;
 }
 
-ul.grid{
-	/*display: inline-block;*/
+ul{
 	list-style-type: none;
-	height:10%;
-	/*learnt gradient color from 
-	https://www.w3schools.com/css/css3_gradients.asp*/
-	background: -webkit-linear-gradient(top, rgba(88,89,91,0), 
-		rgba(88,89,91,0.2));
-	border:15px solid white;
-	border-radius: 1em;
-	height:10%;
 }
 
-li{	
-	text-align: center;
-	line-height:2em;
+li{
+	margin:auto;
 }
+
 li a{
-	font-size: 0.8em;
+	font-size: 0.7em;
 	color:#58595b;
 	text-transform: uppercase;
+	/*background-color:red;*/
 }
 
 li a:hover{
@@ -136,8 +122,12 @@ li a:hover{
 	position: relative;
 }
 
-#footage{
+div#footage{
 	width:100%;
+	/*learnt gradient color from 
+	https://www.w3schools.com/css/css3_gradients.asp*/
+	background: -webkit-linear-gradient(top, rgba(88,89,91,0), 
+		rgba(88,89,91,0.5));
 	position:absolute;
 	bottom: 0;
 }
@@ -181,12 +171,6 @@ img{
 
 }
 
-a.logo{
-	width:150px;
-	margin-left:20%;
-	position:relative;
-	right:10%;
-}
 a.logo:hover{
 	animation-name:rotate20deg;
 	animation-duration: 2s;
@@ -195,53 +179,41 @@ a.logo:hover{
 	animation-fill-mode: both;
 }
 /*set location for page title ---------------*/
-#figcationLogoAbout{
-	padding-bottom: 2em;
+div.nav{
+	background-color: black;
+	width:100%;
+	height: 70px;
+	position: relative;
+}
+.logo{
+	max-width:80px;
+	padding: 0.2em;
 	position: absolute;
-	left:43%;
-	top:5%;
+	left:5%;
 }
 
-#figcationLogoCitation{
-	padding-bottom: 2em;
+.figcationLogo{
 	position: absolute;
-	left:43%;
-	top:40%;
+	right: 5%;
+	bottom:0;
 }
-#figcationLogoContact{
-	position: absolute;
-	left:43%;
-	top:17%;
+/*home page -----------------------------------*/
+.homeCenter{
+	width:80%;
+	margin: auto;
 }
 
-#figcationLogoProject1{
-
+#homePara{
+	z-index: 0;
+	position: relative;
 }
 
-#figcationLogoProject2{
-
-}
-
-#figcationLogoStyle{
-	position: absolute;
-	left:45%;
-	top:10%;
-}
-#figcationLogoWorks{
-	position: absolute;
-	left:43%;
-	top:25%;
-}
-#figcationLogoWorks2{
-	position: absolute;
-	left:45%;
-	top:13%;
-}
-/*-----------------------------------*/
 #logowithbox{
-	min-width: 150px;
-	height:auto;
-	z-index: 10;
+	max-width: 400px;
+	z-index: -1;
+	position: absolute;
+	left:20%;
+	top:-50%;
 }
 
 #lInbox{
@@ -270,20 +242,14 @@ https://css-tricks.com/svg-line-animation-works/*/
 		stroke-dashoffset:1000;
 	}
 }
-
-#welcome{
-	width:60%;
-	padding-left: 2em;
-	margin-right: 0;
-	margin-left: 4%;
+.nav_link, h1{
+	color: #41d6c3;
 }
 
-.nav_link, h1,#figcationLogoContact,
-#figcationLogoAbout,#figcationLogoCitation,
-#figcationLogoOthers,#figcationLogoProject1,#figcationLogoProject2,
-#figcationLogoStyle,#figcationLogoWorks,#figcationLogoWorks2{
+
+.figcationLogo{
 	/*display: block;*/
-	color: #41d6c3;
+	color: white;
 }
 
 .intext_link{
@@ -343,7 +309,7 @@ https://css-tricks.com/svg-line-animation-works/*/
 	}
 }
 
-/*rotate svg which learnt fromhttps://css-tricks.
+/*rotate svg which learnt from https://css-tricks.
 com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 @keyframes rotate20deg{
 	0%{
@@ -414,6 +380,13 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	}
 }
 
+.toggle{
+	transform: scale(2);
+	display: block;
+	margin-left:20%;
+	margin-top: 15%;
+}
+
 .color,.font,.button{
 	padding: 2em;
 	border:1px dashed black;
@@ -452,7 +425,10 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 }
 
 .imageButton{
-	width:2em;
+	width:2.5em;
+	display: flex;
+	margin:2em auto;
+
 	fill:#41d6c3;
 	/*opacity: 0.5;*/
 	transition: 0.3s;
@@ -473,11 +449,8 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 }
 
 #broimage{
-	width:60%; 
-	margin:auto;
-}
-div#broimage{
-	margin-top:4em;
+	width:80%; 
+	margin:100px auto;
 	background-color: rgba(255, 192, 203,0.8);
 }
 .firstImage{
@@ -519,43 +492,16 @@ div#broimage{
 	bottom:-5%;
 }
 
-.projectContent{
-	width:55%;
-	margin:auto;
-	/*align-items:center;*/
-	border-left: 5px inset pink;
-}
-.projectContent p{
-	max-width: 40%;
-	/*min-width:30%;*/
-}
-
-.projectContent img:hover{
-	transform: scale(3);
-}
-
 /*works2 page --------------------*/
 #personaimage{
-	width:40%;
-	height:auto;
-	max-height: 400px;	
+	max-width:20%;
+	min-width: 200px;
+	display: flex;
+	margin:100px auto;
 }
 
 #personaimage:hover{
-	transform: scale(1.2);
-}
-
-.personaimage{
-	text-align: center;
-	width:55%;
-}
-
-.personaimage,.contact{
-	border:0.7em groove pink;
-	animation:bdcolorChange;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out 2s;
-	animation-duration: 5s;
+	transform: scale(1.4);
 }
 
 .project2{
@@ -567,10 +513,6 @@ div#broimage{
 
 .project2 img{
 	width:350px;
-}
-
-.project2 img:hover{
-	transform: scale(2);
 }
 
 /*aout page ___________________*/
@@ -596,7 +538,14 @@ div#broimage{
 	margin-top: 10%;
 	width:60%;
 	position:relative;
-
+	border:0.7em groove pink;
+	animation:bdcolorChange;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out 2s;
+	animation-duration: 5s;
+}
+.bkgd{
+	background-color: pink;
 }
 
 @media(max-width: 900px){
@@ -624,18 +573,35 @@ div#broimage{
 }
 
 #iImage2{
-	height:400px;
+	height:300px;
+	width:400px;
 	padding-top:1.5em;
 	padding-left: 4em; 
 }
 
 /*style page------------------------------*/
+
 #styleContainer{
 	width:70%;
 	margin:auto;
 }
-
-
-
-
-
+/*project1 page------------------------------*/
+#project1-image{
+	height:60%;
+	width:60%;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+.projectContent{
+	width:80%;
+	margin:auto;
+}
+.projectContent img{
+	padding-top: 2em;
+	padding-bottom: 2em;
+	width:330px;
+}
+/*citation page-----------------------------------*/
+#citationContainer{
+	margin:100px auto;
+}
