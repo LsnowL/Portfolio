@@ -5,6 +5,12 @@ http://carbondesignsystem.com/components/button/code*/
   box-sizing: border-box;
 }
 
+/*normalize website from https://necolas.github.io/normalize.css/7.0.0/normalize.css*/
+html {
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
 /*learnt from https://css-tricks.com
 /snippets/css/using-font-face/*/
 @font-face{
