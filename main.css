@@ -128,13 +128,14 @@ li a:hover{
 	position: relative;
 }
 
-div#footage{
+div.footage{
 	width:100%;
 	/*learnt gradient color from 
 	https://www.w3schools.com/css/css3_gradients.asp*/
 	background: -webkit-linear-gradient(top, rgba(88,89,91,0), 
 		rgba(88,89,91,0.5));
-	position:absolute;
+	margin-bottom: 0;
+	position:fixed;
 	bottom: 0;
 }
 
@@ -386,6 +387,12 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	}
 }
 
+@keyframes addHeight{
+	to {
+		height:1800px;
+	}
+}
+
 .toggle{
 	transform: scale(2);
 	display: block;
@@ -428,6 +435,19 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 
 #color5{
 	background-color:pink;
+}
+.bar{
+	margin-bottom: 2.2em;
+	margin-top: 7em;
+	width:10px;
+	height:10px;
+	background:pink;
+	border:1px solid pink;
+	animation:addHeight;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+	animation-timing-function: ease-out;
 }
 
 .imageButton{
@@ -595,6 +615,9 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	margin:auto;
 }
 /*project1 page------------------------------*/
+#project1Container{
+	width:90%;
+}
 #project1-image{
 	height:60%;
 	width:60%;
