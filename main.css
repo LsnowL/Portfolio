@@ -576,13 +576,16 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 /*about page--------------------------*/
 #iImage{
 	padding-top:3em; 
+	height:300px;
+	width:300px;
+
 }
 
 #iImage2{
 	height:300px;
-	width:400px;
+	width:200px;
 	padding-top:1.5em;
-	padding-left: 4em; 
+	padding-left: 3em; 
 }
 
 /*style page------------------------------*/
