@@ -4,11 +4,8 @@ http://carbondesignsystem.com/components/button/code*/
 * {
   box-sizing: border-box;
 }
-
-/*normalize website from https://necolas.github.io/normalize.css/7.0.0/normalize.css*/
-html {
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+body.greyBK{
+	background: linear-gradient(to bottom, #e1e2e6, #ffffff);
 }
 
 /*learnt from https://css-tricks.com
@@ -58,11 +55,11 @@ h2{	font-size:1.3em;
 	letter-spacing: 0.2em;
 }
 
-h3,h4{
+h3{
 	letter-spacing: 0.1em;
 }
 
-h1,h2,h3,h4,.figcationLogo{
+h1,h2,h3,.figcationLogo{
 	text-transform:uppercase;
 	text-align: center;	
 }
@@ -83,12 +80,9 @@ h2,h3{
 	background-color: #5a6872;
 	padding: 0.5em;
 }
-
-h4{
-	letter-spacing: 0.15em;
-	color:#58595b;
+p.sub::first-letter{
+	initial-letter: 2;
 }
-
 p{	
 
 	text-align: center;
@@ -482,10 +476,6 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	animation-timing-function: ease-in-out 5s;
 	animation-fill-mode: both;
 }
-.imageButton:hover{
-	transform: scale(2);
-}
-
 /*works1 page--------------------------------------*/
 .downArrow{
 	position: fixed;
@@ -527,14 +517,26 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 
 	position: absolute;
 	left:-10%;
-	bottom:-10%;
+	bottom:-50%;
 	transform: translate(0,50%);
 	z-index: 9;
 }
 
-.thirdImage:hover #fourthImage{
+.thirdImage{
 	left:0;
 	bottom:-5%;
+}
+
+#fourthImage{
+	animation:moveUp;
+	animation-duration: 1.3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+@keyframes moveUp{
+	to{
+		transform: translateX(17%);
+	}
 }
 /*works2 page --------------------*/
 #personaimage{
@@ -542,12 +544,16 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	min-width: 200px;
 	display: flex;
 	margin:100px auto;
+	animation:scale;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
 }
-
-#personaimage:hover{
-	transform: scale(1.4);
+@keyframes scale{
+	to{
+		transform: scale(1.2);
+	}
 }
-
 .project2{
 	width:70%;
 	margin:auto;
@@ -649,8 +655,7 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 .projectContent{
 	width:80%;
 	margin:auto;
-	background-color:#f2f2f2;
-	/*background: linear-gradient(to bottom, #e1e2e6, #ffffff);*/
+	background-color: white;
 	border-top:2px solid #e4e4e4;
 	padding-top: 1em;
 	margin-bottom:2em;
