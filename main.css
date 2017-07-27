@@ -436,20 +436,33 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 #color5{
 	background-color:pink;
 }
-.bar{
+.bar,.bar2,.bar3{
 	margin-bottom: 2.2em;
-	margin-top: 7em;
-	width:10px;
 	height:10px;
 	background:pink;
 	border:1px solid pink;
 	animation:addHeight;
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
-	animation-delay: 2s;
 	animation-timing-function: ease-out;
 }
 
+.bar{
+	width:7px;
+	margin-top: 7em;
+	margin-right: 8px;
+	
+}
+.bar2{
+	width:5px;
+	margin-top: 3em;
+	animation-delay: 2s;
+}
+.bar3{
+	margin-top: 5em;
+	width:5px;
+	margin-left:7px;
+}
 .imageButton{
 	width:2.5em;
 	display: flex;
@@ -627,6 +640,9 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 .projectContent{
 	width:80%;
 	margin:auto;
+	background-color:#f2f2f2;
+	border-top:2px solid #e4e4e4;
+	padding-top: 1em;
 }
 .projectContent img{
 	padding-top: 2em;
