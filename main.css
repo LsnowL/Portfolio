@@ -471,10 +471,8 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 .imageButton{
 	width:2.5em;
 	display: flex;
-	margin:2em auto;
-
+	margin:1.5em auto;
 	fill:#41d6c3;
-	/*opacity: 0.5;*/
 	transition: 0.3s;
 	animation-name:rotate20deg;
 	animation-duration: 2s;
@@ -486,9 +484,10 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	transform: scale(2);
 }
 
+/*works1 page--------------------------------------*/
 .downArrow{
 	position: fixed;
-	bottom:-65%;
+	top:130%;
 	left:50%;
 }
 
@@ -535,7 +534,6 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	left:0;
 	bottom:-5%;
 }
-
 /*works2 page --------------------*/
 #personaimage{
 	max-width:20%;
