@@ -386,9 +386,10 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	}
 }
 
-@keyframes addHeight{
+@keyframes moveHeight{
 	to {
-		height:1800px;
+		transform: translateY(2000px);
+		opacity: 1;
 	}
 }
 
@@ -442,30 +443,32 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 }
 .bar,.bar2,.bar3{
 	margin-bottom: 2.2em;
-	height:10px;
 	background:pink;
 	border:1px solid pink;
-	animation:addHeight;
-	animation-duration: 4s;
+	animation:moveHeight;
+	animation-duration: 6s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
+	opacity: 0.5;
 }
-
 .bar{
-	width:7px;
+	width:10px;
+	height:150px;
 	margin-top: 7em;
-	margin-right: 8px;
-	
+	margin-right: 8px;	
 }
 .bar2{
-	width:5px;
+	width:8px;
+	height:90px;
 	margin-top: 3em;
 	animation-delay: 2s;
 }
 .bar3{
 	margin-top: 5em;
-	width:5px;
+	width:9px;
+	height:130px;
 	margin-left:7px;
+	animation-delay: 1s;
 }
 .imageButton{
 	width:2.5em;
