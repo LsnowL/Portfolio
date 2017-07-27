@@ -75,7 +75,7 @@ label{
 	font-style: italic;
 	text-align: center;
 	padding: 0.3em;
-	text-decoration:line-through;
+	/*text-decoration:line-through;*/
 }
 
 h2,h3{
@@ -136,7 +136,7 @@ div.footage{
 		rgba(88,89,91,0.5));
 	margin-bottom: 0;
 	position:fixed;
-	bottom: 0;
+	bottom:0;
 }
 
 a{
@@ -300,9 +300,9 @@ https://css-tricks.com/svg-line-animation-works/*/
 }
 
 .fadeinLeft, .fadeinRight,.fadeinTop,.fadeinBottom{
-	animation-duration: 4s;
+	animation-duration: 2s;
 	animation-iteration-count:1;
-	animation-timing-function: ease-in-out 4s;
+	animation-timing-function: ease-in-out 1s;
 	animation-fill-mode: both;
 }
 
@@ -394,10 +394,15 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 }
 
 .toggle{
+	transition: 1s;
 	transform: scale(2);
 	display: block;
-	margin-left:20%;
-	margin-top: 15%;
+	margin:auto;
+}
+
+.toggleImg{
+	width:auto;
+	height:400px;
 }
 
 .color,.font,.button{
@@ -553,7 +558,11 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 .project2 img{
 	width:350px;
 }
-
+.video{
+	width:60%;
+	height:auto;
+	margin-left:20%;
+}
 /*aout page ___________________*/
 .persnoalInformation,.persnoalInformation2{
 	width:70%;
@@ -628,7 +637,7 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	margin:auto;
 }
 /*project1 page------------------------------*/
-#project1Container{
+#project1Container,#project2Container{
 	width:90%;
 }
 #project1-image{
@@ -643,6 +652,7 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	background-color:#f2f2f2;
 	border-top:2px solid #e4e4e4;
 	padding-top: 1em;
+	margin-bottom:2em;
 }
 .projectContent img{
 	padding-top: 2em;
