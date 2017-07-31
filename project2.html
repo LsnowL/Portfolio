@@ -9,14 +9,13 @@
 		 <!-- Toggle class learnt from https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_toggleclass -->
 		<script>
 			$(document).ready(function(){
-			    $(".toggleImg").click(function(){
+			    $(".toggleImg,#personaImg").click(function(){
 			        $(this).toggleClass("toggle");
 			    });
 			});
 		</script>
 	</head>
-
-	<body class="greyBK">
+	<body class="greyBK" id="secondProject">
 		<!-- navigation bar start-->
 		<div class="grid nav">
 			<a class="logo" href="index.html#homepageContainer">
@@ -69,7 +68,7 @@
 						This persona is designed based on ethnography data that we did before. To summarize and integrate data, we found the most of members usually enjoy doing exercise and making friends in their daily life. Their goals to attend SFU Cheerleading club are to keep fit and self-discipline.<br><br> 
 						For this person design, it keeps unity on both font and color palette. Also, Icons group composition together and it is easy for viewers to understand. Clear hierchy and separate sections make viewers easy to eye-catching. All of design details contribe to an appealing work.  
 					</p>	
-					<img class="grid-item toggleImg" alt="project2" src="img/persona.jpg">
+					<img class="grid-item" id="personaImg" alt="project2" src="img/persona.jpg">
 				</div>	
 			</div>
 			<h1>cultural probes</h1>
