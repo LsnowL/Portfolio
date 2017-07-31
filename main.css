@@ -590,7 +590,7 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
 		0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-top:2px solid #e4e4e4;
-	padding-top: 1em;
+	padding: 1em;
 	margin-bottom:2em;
 }
 .projectContent img{
