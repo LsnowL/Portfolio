@@ -597,6 +597,10 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	padding-bottom: 2em;
 	width:330px;
 }
+.move{
+	position:relative;
+	left:45%;
+}
 /*citation page-----------------------------------*/
 div#citationContainer{
 	width:80%;
