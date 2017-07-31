@@ -92,10 +92,9 @@ li a{
 	font-size: 0.7em;
 	color:#58595b;
 	text-transform: uppercase;
-	/*background-color:red;*/
 }
 li a:hover{
-	letter-spacing:0.9em;
+	letter-spacing:0.2em;
 }
 #homepageContainer{
 	position: relative;
