@@ -67,6 +67,12 @@ p.sub{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
 		0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.firstCharacter{
+	line-height:1.2em;
+	font-size: 3em;
+	position: relative;
+	top:0.45em;
+}
 p{	
 
 	text-align: center;
@@ -180,11 +186,12 @@ div.nav{
 	position: relative;
 }
 #logowithbox{
+	width:50%;
 	max-width: 400px;
 	z-index: -1;
-	position: absolute;
-	left:10%;
-	top:30%;
+	position: fixed;
+	left:40%;
+	top:26%;
 }
 #lInbox{
 	fill:pink;
