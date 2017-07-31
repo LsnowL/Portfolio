@@ -159,9 +159,10 @@ img{
 }	
 
 #right-nav{
-	writing-mode:vertical-rl;
+	writing-mode:vertical-lr;
 	width:20%;
 	height:80%;
+	transform: rotate(180deg);
 }
 
 #bottom-nav{
