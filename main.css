@@ -46,7 +46,7 @@ h1,h2,h3,.figcationLogo{
 	text-transform:uppercase;
 	text-align: center;	
 }
-label{
+span{
 	letter-spacing: 0.15em;
 	color:#58595b;
 	font-kerning:normal;
