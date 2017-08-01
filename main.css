@@ -113,6 +113,7 @@ div.footage{
 	margin-bottom: 0;
 	position:fixed;
 	bottom:0;
+	left:0;
 }
 a{
 	text-decoration: none;
@@ -344,7 +345,6 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 }
 .imageButton{
 	width:2.5em;
-	display: flex;
 	margin:1.5em auto;
 	fill:#41d6c3;
 	transition: 0.3s;
@@ -418,13 +418,19 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	display: flex;
 	margin:100px auto;
 	animation:scale;
-	animation-duration: 2s;
+	animation-duration: 5s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 }
 @keyframes scale{
-	to{
-		transform: scale(1.2);
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(0.5);
+	}
+	100%{
+		transform: scale(1);
 	}
 }
 /*paoject2 page-----------------------------*/
