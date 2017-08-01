@@ -358,6 +358,7 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	position: fixed;
 	bottom:0;
 	left:50%;
+	z-index: 100;
 }
 #broimage{
 	width:80%; 
