@@ -68,8 +68,9 @@ p.sub{
 		0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 p{	
-
+	padding:2em;
 	text-align:left;
+	margin:auto;
 	font-size: 0.8em;
 	font-weight:100;
 	letter-spacing:0.2em;
@@ -80,10 +81,6 @@ p{
 	max-width: 500px;
 	min-width: 150px;
 	}
-.middle{
-	margin:auto;
-	text-align:center;
-}
 ul{
 	list-style-type: none;
 }
@@ -97,6 +94,7 @@ li a{
 }
 li a:hover{
 	letter-spacing:0.2em;
+	transition: 0.6s ease-in-out;
 }
 #homepageContainer{
 	position: relative;
@@ -228,8 +226,8 @@ https://css-tricks.com/svg-line-animation-works/*/
 }
 /*learnt from https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1*/
 .nav_link:hover,.nav_link:visited,.nav_link:active{
-	/*animation-name: bgcolorChange;*/
 	letter-spacing: 1.8em;
+	transition: 0.8s ease-in-out;
 }
 .intext_link:hover,.intext_link:visited,.intext_link:active{
 	background-color: rgba(65, 214, 195,0.5);
@@ -586,10 +584,13 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 #project1Container,#project2Container{
 	width:90%;
 }
-.project1-image{
-	height:60%;
-	width:60%;
-	margin:5px;
+.project1-image,#project1Image{
+	height:150px;
+	width:300px;
+}
+#project1Image{
+	display: block;
+	margin:auto;
 }
 .projectContent{
 	width:80%;
@@ -598,12 +599,14 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
 		0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-top:2px solid #e4e4e4;
-	padding: 1em;
 	margin-bottom:2em;
 }
 .projectContent img{
 	width:230px;
 	margin:0 auto;
+}
+.middle{
+	text-align: center;
 }
 .move{
 	position:relative;
