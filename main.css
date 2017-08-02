@@ -32,19 +32,11 @@ body{
 .grid-item{	
 	margin:auto;
 }
-h1,.figcationLogo{
+h1,.figcationLogo,#figcationLogo{
 	font-size:1.5em;
 	letter-spacing: 0.5em;
-}
-h2{	font-size:1.3em;
-	letter-spacing: 0.2em;
-}
-h3{
-	letter-spacing: 0.1em;
-}
-h1,h2,h3,.figcationLogo{
 	text-transform:uppercase;
-	text-align: center;	
+	text-align: center;
 }
 span{
 	letter-spacing: 0.15em;
@@ -54,11 +46,6 @@ span{
 	font-style: italic;
 	text-align: center;
 	padding: 0.3em;
-}
-h2,h3{
-	color:white;
-	background-color: #5a6872;
-	padding: 0.5em;
 }
 p.sub{
 	padding: 1em;
@@ -71,10 +58,10 @@ p{
 	padding:2em;
 	text-align:left;
 	margin:auto;
-	font-size: 0.8em;
+	font-size: 1em;
 	font-weight:100;
-	letter-spacing:0.2em;
-	word-spacing: 0.2em;
+	letter-spacing:0.1em;
+	word-spacing: 0.1em;
 	stroke-linecap:2em;
 	line-height:2em;
 	color:#58595b;
@@ -167,9 +154,13 @@ div.nav{
 	left:5%;
 }
 .figcationLogo{
+	color: white;
 	position: absolute;
 	right: 5%;
 	bottom:0;
+}
+#figcationLogo{
+	color: white;
 }
 /*home page -----------------------------------*/
 .homeCenter{
@@ -214,10 +205,6 @@ https://css-tricks.com/svg-line-animation-works/*/
 }
 .nav_link, h1{
 	color: #41d6c3;
-}
-.figcationLogo{
-	/*display: block;*/
-	color: white;
 }
 .intext_link{
 	color:white;
@@ -579,6 +566,9 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 }
 #color5{
 	background-color:pink;
+}
+.black{
+	background-color: black;
 }
 /*project1 page------------------------------*/
 #project1Container,#project2Container{
