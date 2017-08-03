@@ -8,7 +8,6 @@ body.greyBK{
 }
 body{
 	font-family: 'Gudea', sans-serif;
-	font-size:100%;
 }
 .grid{
 	display:flex;
@@ -20,8 +19,8 @@ body{
 	margin:auto;
 }
 h1,.figcationLogo,#figcationLogo{
-	font-size:1.5em;
-	letter-spacing: 0.5em;
+	font-size:1.3em;
+	letter-spacing: 0.3em;
 	text-transform:uppercase;
 	text-align: center;
 }
@@ -226,12 +225,6 @@ https://css-tricks.com/svg-line-animation-works/*/
 }
 .intext_link:hover,.intext_link:visited,.intext_link:active{
 	background-color: rgba(65, 214, 195,0.5);
-}
-.nav_link:hover,.nav_link:visited,.nav_link:active{
-	animation-duration: 2s;
-	animation-iteration-count:infinite;
-	animation-timing-function: ease-in-out 2s;
-	animation-fill-mode: both;
 }
 .fadeinLeft{
 	animation-name: fadeinLeft;
@@ -497,9 +490,6 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 }
 .persnoalInformation p{
 	max-width: 90%;
-}
-.persnoalInformation2 p{
-	max-width: 78%;
 }
 #iImage{
 	width:400px;
