@@ -76,6 +76,7 @@ li a:hover{
 }
 div.footage{
 	width:100%;
+	height:100px;
 	/*learnt gradient color from 
 	https://www.w3schools.com/css/css3_gradients.asp*/
 	background: linear-gradient(to bottom, #e1e2e6, #ffffff);
