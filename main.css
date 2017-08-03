@@ -235,10 +235,7 @@ https://css-tricks.com/svg-line-animation-works/*/
 .fadeinTop{
 	animation-name: fadeinTop;
 }
-.fadeinBottom{
-	animation-name: fadeinBottom;
-}
-.fadeinLeft, .fadeinRight,.fadeinTop,.fadeinBottom{
+.fadeinLeft, .fadeinRight,.fadeinTop{
 	animation-duration: 2s;
 	animation-iteration-count:1;
 	animation-timing-function: ease-in-out 1s;
@@ -275,18 +272,6 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	0%{
 		opacity: 0;
 		transform:translateY(-10em);
-	}
-
-	100%{
-		opacity: 1;
-		transform:translateY(0);
-	}
-}
-@keyframes fadeinBottom{
-
-	0%{
-		opacity: 0;
-		transform:translateY(20em);
 	}
 
 	100%{
@@ -405,7 +390,8 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	display: flex;
 	margin:100px auto;
 	animation:scale;
-	animation-duration: 3s;
+	animation-delay:2s;
+	animation-duration: 2s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: 1;
 }
