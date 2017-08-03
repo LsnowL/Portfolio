@@ -6,21 +6,8 @@ http://carbondesignsystem.com/components/button/code*/
 body.greyBK{
 	background: linear-gradient(to bottom, #e1e2e6, #ffffff);
 }
-/*learnt from https://css-tricks.com
-/snippets/css/using-font-face/*/
-@font-face{
-	font-family: "myFont";
-	src:url(BauerBodoni/BauerBodoniStd-Bold.otf),
-		url(BauerBodoni/BauerBodoniStd-BlackCond.otf),
-		url(BauerBodoni/BauerBodoniStd-BlackItalic.otf),
-		url(BauerBodoni/BauerBodoniStd-Black.otf),
-		url(BauerBodoni/BauerBodoniStd-BoldCond.otf),
-		url(BauerBodoni/BauerBodoniStd-BoldItalic.otf),
-		url(BauerBodoni/BauerBodoniStd-Italic.otf),
-		url(BauerBodoni/BauerBodoniStd-Roman.otf);
-}
 body{
-	font-family:"myFont";
+	font-family: 'Gudea', sans-serif;
 	font-size:100%;
 }
 .grid{
