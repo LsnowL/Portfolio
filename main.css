@@ -130,7 +130,7 @@ img{
 	height:10%;
 
 }
-a.logo:hover{
+a.logo:hover,a#logo:hover{
 	animation-name:rotate20deg;
 	animation-duration: 2s;
 	animation-iteration-count:infinite;
@@ -151,6 +151,13 @@ div.nav{
 	padding: 0.2em;
 	position: absolute;
 	left:5%;
+}
+a#logo{
+	max-width: 80px;
+	display: block;
+	text-align: center;
+	padding-top:10px; 
+	background: black;
 }
 .figcationLogo{
 	color: white;
