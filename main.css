@@ -36,6 +36,12 @@ span{
 }
 span.footage{
 	font-style: normal;
+	font-weight: 300;	
+}
+span#footer{
+	display: block;
+	background: linear-gradient(to bottom, #e1e2e6, #ffffff);
+	font-style: normal;
 	font-weight: 300;
 }
 p.sub{
@@ -534,7 +540,7 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	width:70%;
 	margin:auto;
 }
-.font,.color,.button,.list{
+.font,.color,.button,.list,.footer,.box_shadow{
 	padding: 1em;
 	margin-top: 100px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
