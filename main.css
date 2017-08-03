@@ -221,7 +221,7 @@ https://css-tricks.com/svg-line-animation-works/*/
 }
 /*learnt from https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1*/
 .nav_link:hover,.nav_link:visited,.nav_link:active{
-	letter-spacing: 1.8em;
+	letter-spacing: 1.2em;
 	transition: 0.8s ease-in-out;
 }
 .intext_link:hover,.intext_link:visited,.intext_link:active{
@@ -293,7 +293,7 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 
 	0%{
 		opacity: 0;
-		transform:translateY(10em);
+		transform:translateY(20em);
 	}
 
 	100%{
@@ -305,7 +305,7 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 
 	0%{
 		opacity: 0;
-		transform:translateX(20em);
+		transform:translateX(10em);
 	}
 
 	100%{
@@ -412,17 +412,17 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 	display: flex;
 	margin:100px auto;
 	animation:scale;
-	animation-duration: 5s;
+	animation-duration: 3s;
 	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
+	animation-iteration-count: 1;
 }
 @keyframes scale{
 	0%{
-		transform: scale(1);
+		transform: scale(0);
 	}
-	50%{
+/*	50%{
 		transform: scale(0.9);
-	}
+	}*/
 	100%{
 		transform: scale(1);
 	}
@@ -485,7 +485,7 @@ com/lodge/svg/08-using-svg-iframeobjectembed/?play=true*/
 }
 /*about page ___________________*/
 .persnoalInformation,.persnoalInformation2{
-	width:70%;
+	width:80%;
 	margin:100px auto;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
 		0 6px 20px 0 rgba(0, 0, 0, 0.19);
